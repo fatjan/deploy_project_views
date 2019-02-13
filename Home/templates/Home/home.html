@@ -1,37 +1,6 @@
-{% load static %}
-<html>
-    <head>   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="{% static 'CSS/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
-        <link href="{% static 'CSS/main.css'%}" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-        <div class="container-fluid">
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-            <h5 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="{% url 'home' %}">Home</a>
-                <a class="p-2 text-dark" href="{% url 'blog' %}">Blog</a>
-                <a class="p-2 text-dark" href="{% url 'mentor' %}">Mentor</a>
-                <a class="p-2 text-dark" href="{% url 'mentee' %}">Mentee</a>
-                <a class="p-2 text-dark" href="{% url 'author' %}">Author</a>
-            </nav>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-12 col-sm-12 des-header text-center">
-                <img src="{% static 'image/alpha-logo.png' %}"><br>
-                <h1>Alpha Tech Academy</h1>
-                <p>
-                    Alpha Tech Academy is a tech talent incubator that gives 
-                    everyone (even <br>non IT background) a chance to be a professional
-                    Tech Talent within 3 <br> months. Contact Person: Email: academy@alphatech.id
-                    Mobile phone:<br> 0877 9609 9530
-                </p>
-            </div>
-        </div>
-        </div>
-        </header>
+{% extends 'Home/base.html' %}
+{%load static%}
+{% block content %}
         <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-lg-4">
@@ -96,50 +65,36 @@
                 <h3>What will you learn?</h3><br>
             </div>
         </div>
+        <div class="container-fluid">
         <div class="row" id="under"> 
-            <div class="col-md-2 col-6 col-sm-3" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-html.png' %}">
+            <div class="col-md-2 col-6 col-sm-3 kotak_bawah">
+                <img class="apa" src ="{% static 'image/learn-html.png' %}" 
+                style="padding-left:23px;">
             </div>
-            <div class="col-md-2 col-6 col-sm-3" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-programming.png' %}">
+            <div class="col-md-2 col-6 col-sm-3 kotak_bawah">
+                <img class="apa" src ="{% static 'image/learn-programming.png' %}" 
+                style="padding-left:inherit">
             </div>
-            <div class="col-md-2 col-6 col-sm-3" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-git.png' %}" id="git">
+            <div class="col-md-2 col-6 col-sm-3 kotak_bawah">
+                <img src ="{% static 'image/learn-git.png' %}">
             </div>
-            <div class="col-md-2 col-6 col-sm-3" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-api.png' %}" id="api">
+            <div class="col-md-2 col-6 col-sm-3 kotak_bawah">
+                <img src ="{% static 'image/learn-api.png' %}" id="api">
             </div>
         </div>
         <div class="row" id="under"> 
-            <div class="col-md-2 col-6 col-sm-6" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-react.png' %}">
+            <div class="col-md-2 col-6 col-sm-6 kotak_bawah">
+                <img src ="{% static 'image/learn-react.png' %}">
             </div>
-            <div class="col-md-2 col-6 col-sm-6" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-tdd.png' %}">
+            <div class="col-md-2 col-6 col-sm-6 kotak_bawah">
+                <img src ="{% static 'image/learn-tdd.png' %}">
             </div>
-            <div class="col-md-2 col-6 col-sm-6" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-server.png' %}">
+            <div class="col-md-2 col-6 col-sm-6 kotak_bawah">
+                <img src ="{% static 'image/learn-server.png' %}">
             </div>
-            <div class="col-md-2 col-6 col-sm-6" id="kotak_bawah">
-                <img class="gamb" src ="{% static 'image/learn-scrum.png' %}">
+            <div class="col-md-2 col-6 col-sm-6 kotak_bawah">
+                <img src ="{% static 'image/learn-scrum.png' %}">
             </div>
         </div>
         </div>
-        <footer>
-            <br><div class="container-fluid">
-                <div class="col-md-12 col-lg-12 col-sm-12 text-center" id="kaki">
-                    <span>Our Product:</span>
-                    <img src="{% static 'image/logo-grey-alphapay.png' %}">
-                    <img src="{% static 'image/logo-grey-sepulsa.png' %}">
-                    <img src="{% static 'image/logo-grey-alphabill.png' %}">
-                </div>
-                <div class="col-md-12 col-lg-12 col-sm-12 text-center" id="kaki_bawah">
-                    <span>Contact Person: </span>
-                    <span>Mobile Phone: 0877 9609 9530. Email: </span>
-                    <span>academy@alphatech.id</span>
-                </div>
-            </div>
-
-        </footer>
-    </body>
-</html>
+{% endblock %}

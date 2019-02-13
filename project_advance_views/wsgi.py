@@ -1,5 +1,5 @@
 """
-WSGI config for project_views project.
+WSGI config for project_advance_views project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_views.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_advance_views.settings')
 
 application = get_wsgi_application()

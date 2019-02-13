@@ -9,6 +9,10 @@
     padding: 35px;
 }
 
+.bg-white {
+    margin-bottom: -10px !important;
+}
+
 .row {
     padding: 20px 10px;
 }
@@ -30,27 +34,38 @@
 }
 
 #under {
-    padding-left: 250px;
-    padding-right: 150px;
+    padding-left: 323px;
+    padding-right: 121px;
 }
 
-#kotak_bawah {
-    display: table-cell;
-    border: 1px solid #EBEBEB;
+.kotak_bawah {
+    border: 1px solid #ebebeb;
     border-radius: 5px;
-    padding: 50px;
-    margin: 0 15px 0 15px;
-    text-align: center;
-    vertical-align: middle; 
-    width: 100%;
+    margin: 10px;
+    height: 150px;
+}
+
+.apa {
+    width: auto !important;
+    height: auto ;
+}
+
+#api {
+    padding-top: 61px;
+}
+
+.kotak_bawah img {
+    width: 100px;
+    height: auto;
+    padding-top: 50px;
+}
+
+#new {
+    color: blueviolet;
 }
 
 #git {
     padding-top: 10px;
-}
-
-#api {
-    padding-top: 30px;
 }
 
 #kaki {

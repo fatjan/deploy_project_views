@@ -1,43 +1,12 @@
+{% extends 'Home/base.html' %}
 {% load static %}
-<html>
-    <head>   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="{% static 'CSS/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
-        <link href="{% static 'CSS/main.css'%}" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <!-- beginning of header -->
-        <header>
-        <div class="container-fluid">
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-            <h5 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="{% url 'home' %}">Home</a>
-                <a class="p-2 text-dark" href="{% url 'blog' %}">Blog</a>
-                <a class="p-2 text-dark" href="{% url 'mentor' %}">Mentor</a>
-                <a class="p-2 text-dark" href="{% url 'mentee' %}">Mentee</a>
-                <a class="p-2 text-dark" href="{% url 'author' %}">Author</a>
-            </nav>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-12 col-sm-12 des-header text-center">
-                <img src="{% static 'image/alpha-logo.png' %}"><br>
-                <h1>Alpha Tech Academy</h1>
-                <p>
-                    Alpha Tech Academy is a tech talent incubator that gives 
-                    everyone (even <br>non IT background) a chance to be a professional
-                    Tech Talent within 3 <br> months. Contact Person: Email: academy@alphatech.id
-                    Mobile phone:<br> 0877 9609 9530
-                </p>
-            </div>
-        </header>
-        <!-- end of header -->
+{% block content %}
         <!-- beginning of content -->
-        
+        <div class="container-fluid">
         <div class=".co-mentor">
-            <div class="row" style="padding-left: 296px; padding-right: 274px">
+            <div class="row" style="padding-left: 20%; padding-right: 20%">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <img src="{% static 'image/profile-pic2.jpg' %}">
+                    <img src="{% static 'image/profile-pic2.jpg' %}" width="100%">
                     <h3>Fatma Janna</h3>
                     <p style="text-align: justify">
                         Hi, my name is Fatma! I am a software engineer at Alterra. I started my career 
@@ -53,7 +22,7 @@
                     </p>
                     <table>
                         <tr>
-                            <td>
+                            <td style="padding-right: 1px; height: 50px; width: 168px;">
                                 Alamat 
                             </td>
                             <td>
@@ -61,7 +30,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Telephone 
                             </td>
                             <td>
@@ -69,16 +38,23 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Education
                             </td>
                             <td>
-                                : Bachelor of Petroleum Engineering from the Universiti Teknologi Petronas <br>
+                                : Bachelor of Petroleum Engineering from the Universiti Teknologi Petronas, <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 50px">
+
+                            </td>
+                            <td style="padding-left: 11px">
                                 Master of Engineering Science (Petroleum) from the University of New South Wales
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Profession
                             </td>
                             <td>
@@ -86,7 +62,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Nationality
                             </td>
                             <td>
@@ -94,7 +70,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Company
                             </td>
                             <td>
@@ -102,7 +78,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Email
                             </td>
                             <td>
@@ -110,7 +86,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td style="height: 50px">
                                 Address 
                             </td>
                             <td>
@@ -120,29 +96,12 @@
 
                     </table>
                 </div>
-                <div style="padding-left: 55px;">
+                <div class="col-lg-12 col-md-12 col-sm-6" style="padding-left: 14%; padding-right: 20%">
                     <br><br>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3141822078887!2d112.6082764497582!3d-7.966446794234025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0xa77fa961a7c4e4b7!2sSepulsa+Lodge+Malang!5e0!3m2!1sen!2sid!4v1550027195603" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-      
+        </div>
         <!-- end of content -->
-        <!-- beginning of footer     -->
-        <footer>
-                <br><div class="container-fluid">
-                    <div class="col-md-12 col-lg-12 col-sm-12 text-center" id="kaki">
-                        <span>Our Product:</span>
-                        <img src="{% static 'image/logo-grey-alphapay.png' %}">
-                        <img src="{% static 'image/logo-grey-sepulsa.png' %}">
-                        <img src="{% static 'image/logo-grey-alphabill.png' %}">
-                    </div>
-                    <div class="col-md-12 col-lg-12 col-sm-12 text-center" id="kaki_bawah">
-                        <span>Contact Person: </span>
-                        <span>Mobile Phone: 0877 9609 9530. Email: </span>
-                        <span>academy@alphatech.id</span>
-                    </div>
-                </div>
-        </footer>
-    </body>
-</html>
+{% endblock %}
